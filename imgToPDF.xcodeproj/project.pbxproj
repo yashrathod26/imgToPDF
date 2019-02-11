@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		501D8D3022113FD900DEA454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D8D2F22113FD900DEA454 /* AppDelegate.swift */; };
-		501D8D3222113FD900DEA454 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D8D3122113FD900DEA454 /* ViewController.swift */; };
-		501D8D3522113FD900DEA454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D8D3322113FD900DEA454 /* Main.storyboard */; };
 		501D8D3722113FE000DEA454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501D8D3622113FE000DEA454 /* Assets.xcassets */; };
 		501D8D3A22113FE000DEA454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D8D3822113FE000DEA454 /* LaunchScreen.storyboard */; };
+		501D8D422211412100DEA454 /* imgToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D8D412211412100DEA454 /* imgToPDF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		501D8D2C22113FD900DEA454 /* imgToPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgToPDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501D8D2F22113FD900DEA454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		501D8D3122113FD900DEA454 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		501D8D3422113FD900DEA454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		501D8D3622113FE000DEA454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		501D8D3922113FE000DEA454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		501D8D3B22113FE000DEA454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		501D8D412211412100DEA454 /* imgToPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgToPDF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				501D8D2F22113FD900DEA454 /* AppDelegate.swift */,
-				501D8D3122113FD900DEA454 /* ViewController.swift */,
-				501D8D3322113FD900DEA454 /* Main.storyboard */,
+				501D8D412211412100DEA454 /* imgToPDF.swift */,
 				501D8D3622113FE000DEA454 /* Assets.xcassets */,
 				501D8D3822113FE000DEA454 /* LaunchScreen.storyboard */,
 				501D8D3B22113FE000DEA454 /* Info.plist */,
@@ -124,7 +121,6 @@
 			files = (
 				501D8D3A22113FE000DEA454 /* LaunchScreen.storyboard in Resources */,
 				501D8D3722113FE000DEA454 /* Assets.xcassets in Resources */,
-				501D8D3522113FD900DEA454 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +131,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501D8D3222113FD900DEA454 /* ViewController.swift in Sources */,
 				501D8D3022113FD900DEA454 /* AppDelegate.swift in Sources */,
+				501D8D422211412100DEA454 /* imgToPDF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		501D8D3322113FD900DEA454 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				501D8D3422113FD900DEA454 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		501D8D3822113FE000DEA454 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +271,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = imgToPDF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +290,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = imgToPDF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
