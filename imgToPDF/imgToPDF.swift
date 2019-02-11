@@ -15,7 +15,7 @@ open class imgToPDF:UIViewController {
     open func imgtopdf(images: [UIImage],_ imageQuality:CGFloat,fileurl: URL) {
         let pdfDocument = PDFDocument()
         for i in 0 ..< images.count {
-            let tempImg = images[i].jpegData(compressionQuality: imageQuality)
+            let tempImg = UIImageJPEGRepresentation(images[i], imageQuality)
             let imgcomplete = UIImage(data: tempImg!)
             let pdfPage = PDFPage(image: imgcomplete!)
             pdfDocument.insert(pdfPage!, at: i)
